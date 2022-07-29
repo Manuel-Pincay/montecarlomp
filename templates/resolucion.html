@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+<title>Proceso</title>
+{% endblock %}
+
+
+{% block content %}
+<!--<div class="container text-center py-3">-->
+<!--    <h3>Ejercicio Planteado</h3>-->
+<!--    <p class="enunciado  ">Una empresa del medio, dedicada al ensamblado de aparatos de aparatos de telefonía,-->
+<!--        cuenta actualmente con 9 operarios y cada uno con una producción de 28 aparatos terminados.-->
+<!--        Se ensamblan tantos aparatos como lo exija la demanda. La demanda tiene la siguiente probabilidad-->
+<!--        estadística:</p>-->
+<!--</div>-->
+<div class="container w-50 text-center py-3">
+    <legend class="text-left header">Tabla de demanda acumulada:</legend>
+    {{data2|safe}}
+</div><br>
+<div class="container w-75 text-center py-3">
+    <p>ASignacion de valores maximos y minimos:</p>
+    <legend class="text-left header">Mínimos y Máximos</legend>
+    {{data3|safe}}
+</div><br>
+<p class="text-center" >Tabla de números aleatorios:</p>
+<div class="container w-75 text-center py-3">
+    <legend class="text-left header">Números aleatorios.</legend>
+    {{nuevata|safe}}
+</div><br>
+
+<p class="text-center" >A continuacion se puede visualizar la tabla de simulacion y numeros aleatorios.</p>
+<div class="container w-75 text-center py-3">
+    <legend class="text-left header">Simulación y números aleatorios.</legend>
+    {{data4|safe}}
+</div><br>
+
+<div class="container w-75 text-center py-3">
+    <legend class="text-left header">Visualizacion de resultados:</legend>
+    El total productos es: {{data9}} <br>
+    Las demandas es: {{data10}}
+</div><br>
+
+
+
+
+
+{% endblock %}
